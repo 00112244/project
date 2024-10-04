@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ffffff; /* White background */
+    color: #003366; /* Navy text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background: #003366; /* Navy background */
+    color: #ffffff; /* White text color */
+    padding: 50px 20px;
+    border-bottom: 2px solid #002244; /* Slightly darker navy border */
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Container */
+.container {
+    background: #ffffff; /* White background for container */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-detect, .button-custom {
+    background: #003366; /* Navy button */
+}
+
+.button-detect:hover, .button-custom:hover {
+    background: #002244; /* Darker navy on hover */
+    transform: scale(1.05);
+}
+
+/* Output Section */
+.output {
+    background: #ffffff; /* White background for output */
+    border: 2px solid #003366; /* Navy border */
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #003366; /* Navy text color */
+    font-size: 1.2em;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    background: #003366; /* Navy background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: #002244; /* Darker navy on hover */
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

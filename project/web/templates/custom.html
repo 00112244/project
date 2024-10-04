@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sign</title>
+    <link rel="stylesheet" href="/web/static/css/styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Custom Sign</h1>
+            <p>Record and detect your custom signs. Click "Start Recording" to begin and then "Detect Custom Sign" to identify your custom sign.</p>
+        </div>
+    </div>
+    <div class="container">
+        <input type="text" id="custom-sign-name" placeholder="Enter custom sign name" class="input-field" required>
+        <button id="start-record-btn" class="button button-record">Start Recording</button>
+        <button id="detect-custom-btn" class="button button-detect">Detect Custom Sign</button>
+        <div id="output" class="output">
+            <p>No custom sign detected yet.</p>
+        </div>
+        <video id="video-feed" width="640" height="480" autoplay style="display: none;"></video>
+    </div>
+    <a href="/web/templates/index.html" class="back-button">&#9664; Back</a>
+    <script src="/web/static/js/script.js"></script>
+</body>
+</html>

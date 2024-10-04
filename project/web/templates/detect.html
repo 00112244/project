@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect the Sign</title>
+    <link rel="stylesheet" href="/web/static/css/styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Detect the Sign</h1>
+            <p>Use your camera to display signs. Click "Start Detection" to begin and see the detected sign below.</p>
+        </div>
+    </div>
+    <div class="container">
+        <select id="model-select" class="model-select">
+            <option value="lstm">LSTM Model</option>
+            <option value="vit">Vision Transformer Model</option>
+        </select>
+        <button id="start-btn" class="button button-detect">Start Detection</button>
+        <video id="video-feed" width="640" height="480" autoplay style="display: none;"></video>
+        <div id="output" class="output">
+            <p>No sign detected yet.</p>
+        </div>
+    </div>
+    <a href="/web/templates/index.html" class="back-button">&#9664; Back</a>
+    <script src="/web/static/js/script.js"></script>
+</body>
+</html>
